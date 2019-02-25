@@ -1,0 +1,46 @@
+file:
+  /app:
+    exists: true
+    mode: "0755"
+    size: 4096
+    owner: root
+    group: root
+    filetype: directory
+    contains: []
+  /app/app:
+    exists: true
+    mode: "0755"
+    size: 6603967
+    owner: root
+    group: root
+    filetype: file
+    contains: []
+user:
+  root:
+    exists: true
+    uid: 0
+    gid: 0
+    groups:
+    - adm
+    - bin
+    - daemon
+    - dialout
+    - disk
+    - floppy
+    - root
+    - sys
+    - tape
+    - video
+    - wheel
+    home: /root
+    shell: /bin/ash
+process:
+  app:
+    running: true
+http:
+  http://localhost:8080:
+    status: 200
+    allow-insecure: false
+    no-follow-redirects: false
+    timeout: 5000
+    body: []
