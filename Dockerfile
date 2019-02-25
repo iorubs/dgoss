@@ -15,3 +15,4 @@ RUN wget $GOSS_URL -O /usr/local/bin/goss \
 ENV GOSS_FILES_STRATEGY cp
 
 WORKDIR /src
+ENTRYPOINT ["dgoss"]
