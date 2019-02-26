@@ -46,5 +46,5 @@ exit
 docker run --rm -it \
   -v "$(pwd)":/src \
   -v /var/run/docker.sock:/var/run/docker.sock \
-iorubs/dgoss edit app run app
+iorubs/dgoss run app
 ```
