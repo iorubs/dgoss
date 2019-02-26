@@ -8,18 +8,19 @@ https://github.com/aelsabbahy/goss/tree/master/extras/dgoss
 
 
 ### Usage:
-cd example
 
+``` bash
+# cd into the directory with your Dockerfile and build your image.
 docker build -t app .
 
+# dgoss is the entrypoint to this image, so running with no arguments
 docker run --rm -it \
   -v "$(pwd)":/src \
   -v /var/run/docker.sock:/var/run/docker.sock \
 iorubs/dgoss
+# Prints ERROR: USAGE: dgoss [run|edit] <docker_run_params>
 
-ERROR: USAGE: dgoss [run|edit] <docker_run_params>
-
-
+# Add tests
 docker run --rm -it \
   -v "$(pwd)":/src \
   -v /var/run/docker.sock:/var/run/docker.sock \
@@ -33,7 +34,9 @@ goss a file /app/app
 goss a http http://localhost:8080
 exit
 
+# Run tests
 docker run --rm -it \
   -v "$(pwd)":/src \
   -v /var/run/docker.sock:/var/run/docker.sock \
 iorubs/dgoss edit app run app
+```
