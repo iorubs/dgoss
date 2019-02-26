@@ -1,5 +1,5 @@
 file:
-  /app:
+  /src:
     exists: true
     mode: "0755"
     size: 4096
@@ -7,10 +7,10 @@ file:
     group: root
     filetype: directory
     contains: []
-  /app/app:
+  /src/app:
     exists: true
     mode: "0755"
-    size: 6603967
+    size: 6612160
     owner: root
     group: root
     filetype: file

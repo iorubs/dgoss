@@ -33,9 +33,9 @@ iorubs/dgoss edit app
 
 goss a process app
 goss a user root
-goss a user node
-goss a file /app
-goss a file /app/app
+goss a user user2
+goss a file /dir
+goss a file /dir/file
 goss a http http://localhost:8080
 exit
 ```
