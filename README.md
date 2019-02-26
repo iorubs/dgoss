@@ -1,6 +1,8 @@
 # dgoss
 >A simple dgoss image for CI Jobs
 
+[![Build Status](https://travis-ci.org/iorubs/dgoss.svg?branch=master)](https://travis-ci.org/iorubs/dgoss)
+
 ## Description:
 
 Goss is tool for validating server’s configuration (avoid conf. drift). Dgoss is wrapper written on top of the goss for validating docker images.
