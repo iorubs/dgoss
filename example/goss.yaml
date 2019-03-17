@@ -10,7 +10,7 @@ file:
   /src/app:
     exists: true
     mode: "0755"
-    size: 6612160
+    size: 6612269
     owner: root
     group: root
     filetype: file
