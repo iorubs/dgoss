@@ -12,3 +12,11 @@ script:
       -v "$(pwd)/example":/src \
       -v /var/run/docker.sock:/var/run/docker.sock \
     iorubs/dgoss run app
+
+deploy:
+  provider: script
+  script:
+    - curl -X POST https://cloud.docker.com/api/build/v1/source/b8bf2879-5cca-4961-8c7c-8d7b3affd9d0/trigger/139e47af-6721-4eb7-be95-7198a4160e8f/call/
+  skip_cleanup: true
+  on:
+    branch: master
