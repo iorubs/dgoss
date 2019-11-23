@@ -8,6 +8,8 @@ install:
 
 script:
   - |
+    docker build -t iorubs/dgoss .
+
     docker run --rm -it \
       -v "$(pwd)/example":/src \
       -v /var/run/docker.sock:/var/run/docker.sock \
